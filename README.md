@@ -1,3 +1,1 @@
-# Country picker code
-
-This code picks a right country for you to live in.
+# Various little programs in Js I do in my spare time.
