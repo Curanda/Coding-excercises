@@ -1,0 +1,20 @@
+const userInput = document.getElementById("input");
+const output = document.getElementById("output");
+const button = document.getElementById("convert");
+
+const conversion = (userInput) => {
+  userInput = userInput + "";
+  let index = userInput.indexOf("_");
+  let converted = userInput.replace("_", "");
+  converted = [...converted];
+  char = converted[index].toUpperCase();
+  converted[index] = char;
+  converted = converted.join("");
+  return converted;
+};
+
+button.addEventListener("click", function () {
+  const userInput = input.value;
+  const converted = conversion(userInput);
+  output.value = converted;
+});
